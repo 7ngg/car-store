@@ -1,0 +1,28 @@
+@import 'global-style';
+
+* {
+  font-family: 'Inter';
+}
+
+.navbar {
+  background-color: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .navbar-item {
+    margin-right: 10px;
+  }
+
+  .navbar-btn {
+    text-decoration: none;
+    color: #ededed;
+  }
+
+  .navbar-logo {
+
+    svg {
+      width: 100px;
+    }
+  }
+}
