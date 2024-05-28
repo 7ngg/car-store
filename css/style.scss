@@ -7,6 +7,7 @@ main {
   .greeting {
     height: 700px;
     position: relative;
+    display: grid;
 
     .greeting-message {
       position: absolute;
@@ -24,16 +25,35 @@ main {
     }
 
     img {
-      height: 100%;
+      height: inherit;
       width: 100%;
       object-fit: cover;
-      z-index: 1;
     }
 
-    #next,
-    #prev {
-      color: #ededed;
+    .btn-container {
+      width: 95%;
+      position: absolute;
       top: 50%;
+      justify-self: center;
+
+      #next,
+      #prev {
+        color: #ededed;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 16px;
+        transition: ease 0.5s;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+      }
+
+      #next {
+        float: right;
+      }
     }
   }
 }
