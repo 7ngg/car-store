@@ -30,8 +30,11 @@ main {
       object-fit: cover;
     }
 
-    .btn-container {
+    .container {
       width: 95%;
+    }
+
+    .btn {
       position: absolute;
       top: 50%;
       justify-self: center;
@@ -49,6 +52,10 @@ main {
         &:hover {
           background-color: rgba(0, 0, 0, 0.8);
         }
+      }
+
+      #prev {
+        float: left;
       }
 
       #next {
