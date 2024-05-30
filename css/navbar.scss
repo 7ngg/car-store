@@ -20,7 +20,8 @@ header {
 .navbar {
   width: 100%;
   justify-self: center;
-  background-color: #252525;
+  //background-color: #252525;
+  background-color: #2E3131;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +39,7 @@ header {
 
   .navbar-logo {
 
-    svg {
+    img {
       width: 100px;
     }
   }
