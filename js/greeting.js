@@ -29,8 +29,7 @@ function updateMessage(index) {
   const msg = messages[index % messages.length];
   greetingMessage.innerHTML = '';
   greetingMessage.insertAdjacentHTML('beforeend', getMessageTemplate(msg.head, msg.body));
-  greeting.style.background = `url(${msg.img}) no-repeat center center`;
-  greeting.style.backgroundSize = 'cover';
+  greeting.style.background = `url(${msg.img}) center center / cover no-repeat`;
 }
 
 function nextMessage() {
@@ -46,4 +45,3 @@ function prevMessage() {
 nextBtn.addEventListener('click', nextMessage);
 prevBtn.addEventListener('click', prevMessage);
 
-updateMessage(iter);
