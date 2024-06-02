@@ -29,6 +29,10 @@ header {
 
   .navbar-item {
     margin-right: 10px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   .navbar-btn {

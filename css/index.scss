@@ -15,6 +15,7 @@ main {
     position: relative;
     display: grid;
     background: url(../assets/img/cargo-ship.jpg) center center / cover no-repeat;
+    transition: ease 750ms;
 
     .greeting-message {
       z-index: 2;
@@ -35,34 +36,35 @@ main {
       }
     }
 
-    .btn {
-      position: absolute;
-      top: 50%;
-      width: 100%;
+  }
 
-      #next,
-      #prev {
-        color: #ededed;
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: bold;
-        padding: 16px;
-        transition: ease 0.5s;
+  .btn {
+    position: absolute;
+    top: 50%;
+    width: 100%;
 
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
+    #next,
+    #prev {
+      color: #ededed;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 16px;
+      transition: ease 0.5s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
       }
+    }
 
-      #prev {
-        float: left;
-        border-radius: 0 5px 5px 0;
-      }
+    #prev {
+      float: left;
+      border-radius: 0 5px 5px 0;
+    }
 
-      #next {
-        float: right;
-        border-radius: 5px 0 0 5px;
-      }
+    #next {
+      float: right;
+      border-radius: 5px 0 0 5px;
     }
   }
 
